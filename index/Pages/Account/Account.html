@@ -1,0 +1,91 @@
+<DOCTYPE HTML>
+    <html lang="en">
+
+    <head>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <meta charset='utf-8' />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Account</title>
+        <link rel='stylesheet' href='../../css/css_setup.css' />
+        <link rel='stylesheet' href='../../css/css_forms.css'/>
+    </head>
+
+    <body>
+        <nav class="navbar"> <!--This is the Top Navigation bar section-->
+            <div class="navdiv">
+                <a href="../../../index.html">
+                    <img src="../../images/Rockstar Red mini.png" width="100" />
+                </a>
+                    <div class="list">
+                        <ul>
+                            <li><a href="Account.html">Account page</a></li>
+                            <li><a href="../support.html">Support page</a></li>
+                            <li><a href="../news.html">News and Events</a></li>
+                            <li><a href="../about.html">About Us</a></li>
+                            <li><a href="../products.html">Products from us</a></li>
+                        </ul>
+                </div>
+            </div>
+        </nav> <!--End of top nav bar section-->
+        
+    
+    </body>
+
+    <body>
+        <form action='' method='get' class='speaker-form'>
+            <!--User name field-->
+            <div class='form-row'>
+                <label for='User-name'>User Name</label>
+                <input id='User-name' name='full-name' type='text' placeholder='User Name'/>
+            </div>
+            <!--Password field-->
+            <div class='form-row'>
+                <label for='User-password'>Password</label>
+                <input id='User-password' name='password' type='password' placeholder='Password'/>
+            </div>
+             <!--Textareas-->
+             
+    
+             <!--Checkboxes do not need the fieldset element-->
+             <div class='form-row'>
+                <label class='checkbox-label' for='available'>
+                    <input id='available' name='available' type='checkbox' value='is-available'/>
+                    <span>Verify</span>
+                </label>
+            </div>
+    
+             <!-- Send Button -->
+             <div class='form-row-button'>
+                <button type="submit" class="btn btn-primary" data-bs-toggle="tooltip" title="Click to log in and return to the home page">
+                  <a href="../../../index.html">login</a>
+                </button>
+              </div>
+            
+                
+                  <script>
+                  // Register Tool Tip
+                  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                    return new bootstrap.Tooltip(tooltipTriggerEl)
+                  })
+                  </script>
+        </form>
+        </nav>
+        <div class="Account_Extra">
+            <a href="reset.html" style=color:white; text-decoration: line-through;><p>Forget Password</p></a>
+            <a href="register.html" style=color:white; text-decoration: line-through;><p>Create Account</p></a>
+        </div>          
+            
+        <div class="lower-bar">
+            <p>Follow our socials</p>
+            <p>You can find us on the</p>
+            <ol>
+                <li><img src="../images/Twitter.png" width="60"/><a href="#"></a><a href="https://x.com/RockstarGames/" style=color:cyan; text-decoration: line-through;>Twitter / X</a></li>
+                <li><img src="../images/Instagram.png" width="50"/><a href="#"></a><a href="https://www.instagram.com/rockstargames/" style=color:pink; text-decoration: line-through;>Instagram</a></li>
+                <li><img src="../images/YouTube.png" width="50"/><a href="#"></a><a href="https://www.youtube.com/user/RockstarGames" style=color:red; text-decoration: line-through;>YouTube</a></li>
+            </ul>
+            <p>Copyright © #### RockstarRed.com - All rights reserved</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<DOCTYPE HTML>
+    <html lang="en">
+
+    <head>
+        <meta charset='utf-8' />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Account</title>
+        <link rel='stylesheet' href='../../css/css_setup.css' />
+        <link rel='stylesheet' href='../../css/css_forms_PR.css'/>
+    </head>
+
+        <body>
+            <form action='' method='get' class='speaker-form'>
+                <!-- Reset Password fields-->
+                <div class='form-row'>
+                    <label for='User-password'>Enter Your New Password</label>
+                    <input id='User-password' name='password' type='password' placeholder='New Password'/>
+                </div>
+                
+                <div class='form-row'>
+                    
+                    <input id='User-password' name='password' type='password' placeholder='Confirm Password'/>
+                </div>
+                
+        
+                 
+                 <!--Buttons-->
+                 <div class='form-row-botton'>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Click To Register your new account">
+                        <a href="Account.html">Reset</a>
+                        
+                      </button>
+                </div>
+                
+                    
+                      <script>
+                      // Register Tool Tip
+                      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                        return new bootstrap.Tooltip(tooltipTriggerEl)
+                      })
+                      </script>
+            </form>
+        </body>
+    </html>

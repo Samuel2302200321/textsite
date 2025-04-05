@@ -1,0 +1,82 @@
+<DOCTYPE HTML>
+    <html lang="en">
+
+        <head>
+            <meta charset='utf-8' />
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+            <title>Support</title>
+            <link rel='stylesheet' href='../css/css_setup.css' />
+            <link rel='stylesheet' href='../css/css_forms.css'/>
+        </head>
+        <body>
+            <nav class="navbar">
+                <div class="navdiv">
+                    <a href="../../index.html">
+                        <img src="../images/Rockstar Red mini.png" width="100" />
+                    </a>
+                        <div class="list">
+                            <ul>
+                                <li><a href="Account/Account.html">Account page</a></li>
+                                <li><a href="support.html">Support page</a></li>
+                                <li><a href="news.html">News and Events</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="products.html">Products from us</a></li>
+                            </ul>
+                        </div>
+                        </a>
+                </div>
+            </nav>
+        </body>
+        <body>
+            <div class="Support">
+                <h2>Support</h2>
+                <p>Weocome to our support page. Simply Enter your Email, your message to us, and click the botton below.</p>    
+            </div>
+            <form class='speaker-form' onsubmit="sendEmail(); return false;">
+                <!-- Email Field -->
+                <div class='form-row'>
+                  <label for='email'>Your Email</label>
+                  <input id='email' name='email' type='email' placeholder='joe@example.com' required />
+                </div>
+              
+                <!-- Message Field -->
+                <div class='form-row'>
+                  <label for='message'>Your Message</label>
+                  <textarea id='message' name='message' placeholder='Write your message here...' required></textarea>
+                </div>
+              
+                <!-- Send Button -->
+                <div class='form-row-button'>
+                  <button type="submit" class="btn btn-primary" data-bs-toggle="tooltip" title="Send your message to Red">
+                    Send Support Message
+                  </button>
+                </div>
+              </form>
+              
+              <script>
+              function sendEmail() {
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+                const subject = encodeURIComponent("Support Request from " + email);
+                const body = encodeURIComponent(message);
+              
+                // Red's email
+                const mailtoLink = `mailto:rstarredinc1992@gmail.com?subject=${subject}&body=${body}`;
+              
+                window.location.href = mailtoLink;
+              }
+              </script>
+
+            <div class="lower-bar">
+                <p>Follow our socials</p>
+                <p>You can find us on the</p>
+                <ol>
+                    <li><img src="../images/Twitter.png" width="60"/><a href="#"></a><a href="https://x.com/RockstarGames/" style=color:cyan; text-decoration: line-through;>Twitter / X</a></li>
+                    <li><img src="../images/Instagram.png" width="50"/><a href="#"></a><a href="https://www.instagram.com/rockstargames/" style=color:pink; text-decoration: line-through;>Instagram</a></li>
+                    <li><img src="../images/YouTube.png" width="50"/><a href="#"></a><a href="https://www.youtube.com/user/RockstarGames" style=color:red; text-decoration: line-through;>YouTube</a></li>
+                </ul>
+                
+            </div>
+        </body>    
+    </html>
